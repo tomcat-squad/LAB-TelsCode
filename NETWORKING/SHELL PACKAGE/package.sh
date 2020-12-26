@@ -105,6 +105,35 @@ User alice
     echo "";
     ;;
 
+2)  sudo apt update && upgrade -y
+    sudo apt install ssh -y
+    clear
+    echo "======INSTALASI SELESAI======";
+    HOST=$(hostname -I);
+    echo "Buka Putty : $HOST:22";
+    echo "";
+    ;;
+
+3)  sudo apt update && upgrade -y
+    sudo apt install samba -y
+    sudo echo "
+[Alice]
+path = /home/alice
+browseable = yes
+create mode = 0777
+directory mode = 0777
+writeable = yes
+guest ok = yes
+    " >> /etc/samba/smb.conf
+    sudo useradd -m alice
+    chmod 0777 /home/alice
+    systemctl restart smbd
+    clear
+    echo "======INSTALASI SELESAI======";
+    HOST=$(hostname -I);
+    echo "Buka File Explorer : \\$HOST";
+    ;;
+
 5)  exit
     ;;
 
