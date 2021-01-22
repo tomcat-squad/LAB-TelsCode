@@ -29,11 +29,11 @@
                <div class="row">
                   <div class="col">
                     <label for="username">Username</label>
-                     <input type="text" class="form-control" placeholder="admin" name="username" maxlength="10">
+                     <input type="text" class="form-control" placeholder="admin" name="username" maxlength="100">
                   </div>
                   <div class="col">
                     <label for="password">Password</label>
-                     <input type="text" class="form-control" placeholder="Password" name="password" maxlength="10">
+                     <input type="text" class="form-control" placeholder="Password" name="password" maxlength="100">
                   </div>
                </div>
                <button type="submit" class="btn btn-danger mt-3">LOGIN</button>
