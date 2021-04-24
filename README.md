@@ -1,5 +1,5 @@
 <p align="center"> 
-  <img alt="Tels Code" src="https://www.flaticon.com/svg/vstatic/svg/924/924874.svg?token=exp=1611738547~hmac=76d5bdffe42bc461a9c108ad9e2a1a64" height="200" />
+  <img alt="Tels Code" src="https://images.vexels.com/media/users/3/142812/isolated/preview/992801ae3182fa95353e941cfcac9293-shield-logo-emblem-design-by-vexels.png" height="200" />
   <h3 align="center"><b>TELS CODE</b></h3>
 </p>
 
