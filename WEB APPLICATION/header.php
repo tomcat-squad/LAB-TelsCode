@@ -203,10 +203,10 @@ a.docs:hover {
                     <a href="#xssSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Cross Site Scripting</a>
                     <ul class="collapse list-unstyled" id="xssSubmenu">
                         <li>
-                            <a href="http://localhost/LAB-TelsCode/WEB APPLICATION/LAB - CROSS SITE SCRIPTING/REFLECTED XSS">Reflected XSS</a>
+                            <a href="<?php echo ('http://'); echo $_SERVER['HTTP_HOST'];?>/LAB-TelsCode/WEB APPLICATION/LAB - CROSS SITE SCRIPTING/REFLECTED XSS">Reflected XSS</a>
                         </li>
                         <li>
-                            <a href="http://localhost/LAB-TelsCode/WEB APPLICATION/LAB - CROSS SITE SCRIPTING/STORED XSS">Stored XSS</a>
+                            <a href="<?php echo ('http://'); echo $_SERVER['HTTP_HOST'];?>/LAB-TelsCode/WEB APPLICATION/LAB - CROSS SITE SCRIPTING/STORED XSS">Stored XSS</a>
                         </li>
                     </ul>
                 </li>
@@ -214,7 +214,7 @@ a.docs:hover {
                     <a href="#fileInclusionSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">File Inclusion</a>
                     <ul class="collapse list-unstyled" id="fileInclusionSubmenu">
                         <li>
-                            <a href="http://localhost/LAB-TelsCode/WEB APPLICATION/LAB - FILE INCLUSION/REMOTE FILE INCLUSION">Remote File Inclusion</a>
+                            <a href="<?php echo ('http://'); echo $_SERVER['HTTP_HOST'];?>/LAB-TelsCode/WEB APPLICATION/LAB - FILE INCLUSION/REMOTE FILE INCLUSION">Remote File Inclusion</a>
                         </li>
                         <li>
                             <a href="#">Local File inclusion</a>
@@ -225,10 +225,10 @@ a.docs:hover {
                     <a href="#sqlInjectionSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">SQL Injection</a>
                     <ul class="collapse list-unstyled" id="sqlInjectionSubmenu">
                         <li>
-                            <a href="http://localhost/LAB-TelsCode/WEB APPLICATION/LAB - SQL INJECTION/BLIND SQL INJECTION">Blind SQL Injection</a>
+                            <a href="<?php echo ('http://'); echo $_SERVER['HTTP_HOST'];?>/LAB-TelsCode/WEB APPLICATION/LAB - SQL INJECTION/BLIND SQL INJECTION">Blind SQL Injection</a>
                         </li>
                         <li>
-                            <a href="http://localhost/LAB-TelsCode/WEB APPLICATION/LAB - SQL INJECTION/BYPASS ADMIN LOGIN">Bypass Admin Login</a>
+                            <a href="<?php echo ('http://'); echo $_SERVER['HTTP_HOST'];?>/LAB-TelsCode/WEB APPLICATION/LAB - SQL INJECTION/BYPASS ADMIN LOGIN">Bypass Admin Login</a>
                         </li>
                     </ul>
                 </li>
@@ -236,15 +236,15 @@ a.docs:hover {
                     <a href="#tokenAuthenticationSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Token Authentication</a>
                     <ul class="collapse list-unstyled" id="tokenAuthenticationSubmenu">
                         <li>
-                            <a href="http://localhost/LAB-TelsCode/WEB APPLICATION/LAB - TOKEN AUTHENTICATION/LAB - CSRF">Cross Site Request Forgery</a>
+                            <a href="<?php echo ('http://'); echo $_SERVER['HTTP_HOST'];?>/LAB-TelsCode/WEB APPLICATION/LAB - TOKEN AUTHENTICATION/LAB - CSRF">Cross Site Request Forgery</a>
                         </li>
                         <li>
-                            <a href="http://localhost/LAB-TelsCode/WEB APPLICATION/LAB - TOKEN AUTHENTICATION/LAB - NO REDIRECT/noredirect.php">No Redirect</a>
+                            <a href="<?php echo ('http://'); echo $_SERVER['HTTP_HOST'];?>/LAB-TelsCode/WEB APPLICATION/LAB - TOKEN AUTHENTICATION/LAB - NO REDIRECT/noredirect.php">No Redirect</a>
                         </li>
                     </ul>
                 </li>
                 <li <?php if($page == "webShell") echo "class='active'";?>>
-                    <a href="http://localhost/LAB-TelsCode/WEB APPLICATION/LAB - WEBSHELL">WebShell Backdoor</a>
+                    <a href="<?php echo ('http://'); echo $_SERVER['HTTP_HOST'];?>/LAB-TelsCode/WEB APPLICATION/LAB - WEBSHELL">WebShell Backdoor</a>
                 </li>
             </ul>
 
@@ -259,7 +259,7 @@ a.docs:hover {
                     <a href="https://github.com/tomcat-squad/LAB-TelsCode/tree/master/Tutorial" target="_blank" class="docs">Lihat Tutorial Dasar</a>
                 </li>
                 <li>
-                    <a href="http://localhost/phpmyadmin" target="_blank" class="bg-primary">PhpMyAdmin</a>
+                    <a href="<?php echo ('http://'); echo $_SERVER['HTTP_HOST'];?>/phpmyadmin" target="_blank" class="bg-primary">PhpMyAdmin</a>
                 </li>
             </ul>
             <div>
