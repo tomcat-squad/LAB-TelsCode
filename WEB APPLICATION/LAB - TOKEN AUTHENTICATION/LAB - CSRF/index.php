@@ -1,16 +1,8 @@
-<!doctype html>
-<html lang="en">
-   <head>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- Bootstrap CSS -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-      <title>SEKOLAH HACKER - TOMCAT SQUAD</title>
-   </head>
-   <body>
-   <?php 
+<?php
    session_start();
+   $page = "tokenAuthentication";
+   include_once '../../header.php';
+   
    if(isset($_GET['pesan'])){
       if($_GET['pesan'] == "terkirim"){
          echo "<script>alert('Data Berhasil Disimpan')</script>";
@@ -21,7 +13,8 @@
    // Generate token id dan validasi
    $token_id = $csrf->get_token_id();
    $token_value = $csrf->get_token($token_id);
-   ?>
+?>
+   <body>
       <div class="container">
          <div class="text-center">
             <h1>LAB - CSRF</h1>
@@ -49,4 +42,6 @@
          </div>
       </div>
    </body>
-</html>
+<?php
+   include_once '../../footer.php';
+?>
