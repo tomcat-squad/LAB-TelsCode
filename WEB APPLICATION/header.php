@@ -199,7 +199,7 @@ a.docs:hover {
 
             <ul class="list-unstyled components">
                <marquee behavior="" direction=""><p>LAB PENETRATION TESTING | POWERED BY TOMCAT SQUAD</p></marquee> 
-                <li class="active">
+                <li <?php if($page == "xss") echo "class='active'";?>>
                     <a href="#xssSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Cross Site Scripting</a>
                     <ul class="collapse list-unstyled" id="xssSubmenu">
                         <li>
@@ -210,7 +210,7 @@ a.docs:hover {
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li <?php if($page == "fileInclusion") echo "class='active'";?>>
                     <a href="#fileInclusionSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">File Inclusion</a>
                     <ul class="collapse list-unstyled" id="fileInclusionSubmenu">
                         <li>
@@ -221,7 +221,7 @@ a.docs:hover {
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li <?php if($page == "sqlInjection") echo "class='active'";?>>
                     <a href="#sqlInjectionSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">SQL Injection</a>
                     <ul class="collapse list-unstyled" id="sqlInjectionSubmenu">
                         <li>
@@ -232,7 +232,7 @@ a.docs:hover {
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li <?php if($page == "tokenAuthentication") echo "class='active'";?>>
                     <a href="#tokenAuthenticationSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Token Authentication</a>
                     <ul class="collapse list-unstyled" id="tokenAuthenticationSubmenu">
                         <li>
@@ -243,7 +243,7 @@ a.docs:hover {
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li <?php if($page == "webShell") echo "class='active'";?>>
                     <a href="http://localhost/LAB-TelsCode/WEB APPLICATION/LAB - WEBSHELL">WebShell Backdoor</a>
                 </li>
             </ul>

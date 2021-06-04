@@ -1,4 +1,5 @@
 <?php
+   $page = "sqlInjection";
    include_once '../../header.php';
    include_once 'assets/config/koneksi.php';
 ?>

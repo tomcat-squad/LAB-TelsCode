@@ -1,4 +1,5 @@
 <?php
+$page = "fileInclusion";
 include_once '../../header.php'
 ?>
    <body>

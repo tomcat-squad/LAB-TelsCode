@@ -1,4 +1,5 @@
 <?php
+$page = "xss";
 include_once '../../header.php';
 include_once 'assets/config/koneksi.php';
 ?>
