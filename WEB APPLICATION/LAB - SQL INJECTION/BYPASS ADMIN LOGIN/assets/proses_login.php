@@ -6,9 +6,16 @@ session_start();
 include 'config/koneksi.php';
 
 // menangkap data yang dikirim dari form
-$username = $_POST['username']; // addslashes($_POST['username'])
-$password = md5($_POST['password']); // addslashes(md5($_POST['password']))
 
+// SEBELUM DI PATCH
+$username = $_POST['username'];
+$password = md5($_POST['password']);
+
+/*
+// SESUDAH DI PATCH
+$username = addslashes($_POST['username']);
+$password = addslashes(md5($_POST['password']));
+*/
 
 // menyeleksi data admin dengan username dan password yang sesuai
 $data = mysqli_query($koneksi,"SELECT * from admin WHERE username='$username' AND password='$password'");
