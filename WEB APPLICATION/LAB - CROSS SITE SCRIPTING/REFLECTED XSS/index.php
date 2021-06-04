@@ -10,7 +10,8 @@ include_once 'assets/config/koneksi.php';
         </div>
         <?php 
         if(isset($_GET['cari'])){
-            $cari = $_GET['cari']; 
+            $cari = $_GET['cari']; // SEBELUM DI PATCH
+            //$cari = strip_tags($_GET['cari']); // SESUDAH DI PATCH
             echo "<b>Hasil pencarian : ".$cari."</b>";
             }
         ?>
