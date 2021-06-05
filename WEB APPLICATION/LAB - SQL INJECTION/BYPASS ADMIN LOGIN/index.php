@@ -5,7 +5,7 @@
    <body>
       <div class="container">
          <div class="text-center">
-            <h1>LOGIN ADMIN</h1>
+            <h1>LAB - BYPASS ADMIN LOGIN</h1>
          </div>
          <div class="" style="margin-top: 50px;">
          <?php 
