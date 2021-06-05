@@ -1,4 +1,7 @@
 <?php
+$page = "tokenAuthentication";
+include_once '../../header.php';
+
 function stripFile($in){
     $pieces = explode("/", $in); 
     if(count($pieces) < 4) return $in . "/";
@@ -32,7 +35,12 @@ $data = str_replace('<head>','<head><base href="'.stripFile($url).'">',$data);
 return $data;
 }
 if(!isset($_GET['url'])){ ?>
-<form><span>URL: </span><input name="url" value="" type="text"><input value="GO" type="submit"></form>
+<div class="container">
+    <div class="text-center">
+        <h1>LAB - NO REDIRECT</h1>
+        <form><span>Input URL: </span><input name="url" value="" type="text"><input value="GO" type="submit"></form>
+    </div>
+</div>
 <?php	
 }
 else{ 
@@ -45,6 +53,7 @@ else{
 		?>
 <?php
 		echo '<form><span>URL: </span><input name="url" value="'.htmlspecialchars($_GET['url']).'" type="text"><input value="GO" type="submit"></form>';
-		echo "Sorry Bro.<br> Check your URL<br>Only http or https protocols are allowed<br> NO SSRF Here :)</center>"; 
+		echo "Check your URL<br>Only http or https protocols are allowed</center>"; 
 	}
 }
+include_once '../../footer.php';
