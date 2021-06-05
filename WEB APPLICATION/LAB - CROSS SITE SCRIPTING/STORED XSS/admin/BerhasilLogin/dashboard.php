@@ -1,24 +1,16 @@
 <?php
-    include_once('../../assets/config/koneksi.php')
+   // Memulai Session
+   session_start();
+   $page = "xss";
+   include_once '../../../../header.php';
+   include_once('../../assets/config/koneksi.php')
 ?>
-<!doctype html>
-<html lang="en">
-   <head>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- Bootstrap CSS -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-      <title>SEKOLAH HACKER - TOMCAT SQUAD</title>
-   </head>
    <body>
         <?php
-         // Memulai Session
-         session_start();
          // Cek Session Apakah Sudah Status Admin
          if($_SESSION['status'] != 'admin'){
-             header("location:../index.php?pesan=belum_login");
-                exit;
+            header("location:../index.php?pesan=belum_login");
+            exit;
          }
          ?>
       <div class="container">
@@ -45,8 +37,8 @@
                         echo "<td>$row[nama]</td>";
                         echo "<td>$row[kelas]</td>";
                         echo "<td>$row[umur]</td>";
-                        echo "<td><a href='index_edit.php?id=$row[id]'>Edit</a>
-                                <a href='../assets/proses_delete.php?id=$row[id]' onclick=”return confirm(‘Yakin Hapus?’)”>Delete</a></td>";
+                        echo "<td><a href='index_edit.php?id=$row[id]' class='text-primary'>Edit</a>
+                                <a href='../assets/proses_delete.php?id=$row[id]' class='text-danger'>Delete</a></td>";
                         $no++;
                     }
                     ?>
@@ -54,4 +46,6 @@
          </div>
       </div>
    </body>
-</html>
+<?php
+include_once '../../../../footer.php';
+?>

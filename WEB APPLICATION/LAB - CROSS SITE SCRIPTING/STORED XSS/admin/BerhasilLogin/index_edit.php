@@ -1,29 +1,21 @@
 <?php
-    include_once('../../assets/config/koneksi.php');
+   // Memulai Session
+   session_start();
+   $page = "xss";
+   include_once '../../../../header.php';
+   include_once('../../assets/config/koneksi.php');
     
-    $id = (int)$_GET['id'];
+   $id = (int)$_GET['id'];
 
-    $query = mysqli_query($koneksi, "SELECT * FROM peserta WHERE id='$id'");
-    $row = mysqli_fetch_array($query)
+   $query = mysqli_query($koneksi, "SELECT * FROM peserta WHERE id='$id'");
+   $row = mysqli_fetch_array($query)
 ?>
-<!doctype html>
-<html lang="en">
-   <head>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- Bootstrap CSS -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-      <title>SEKOLAH HACKER - TOMCAT SQUAD</title>
-   </head>
    <body>
         <?php
-         // Memulai Session
-         session_start();
          // Cek Session Apakah Sudah Status Admin
          if($_SESSION['status'] != 'admin'){
-             header("location:../index.php?pesan=belum_login");
-                exit;
+            header("location:../index.php?pesan=belum_login");
+            exit;
          }
          ?>
       <div class="container">
@@ -53,4 +45,6 @@
          </div>
       </div>
    </body>
-</html>
+<?php
+include_once '../../../../footer.php';
+?>
