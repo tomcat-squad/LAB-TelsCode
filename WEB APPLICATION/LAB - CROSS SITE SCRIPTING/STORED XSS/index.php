@@ -1,7 +1,6 @@
 <?php
 $page = "xss";
 include_once '../../header.php';
-include_once 'assets/config/koneksi.php';
 ?>
 <!-- BODY -->
 <body>
@@ -37,6 +36,9 @@ include_once 'assets/config/koneksi.php';
             </div>
             <button type="submit" class="btn btn-primary mt-3">Submit</button>
          </form>
+         <div class="text-right">
+            <a href="<?php echo ('http://'); echo $_SERVER['HTTP_HOST'];?>/LAB-TelsCode/WEB APPLICATION/LAB - CROSS SITE SCRIPTING/STORED XSS/admin" class="btn btn-info text-right">ADMIN LOGIN</a>
+         </div>
       </div>
    </div>
 </body>
