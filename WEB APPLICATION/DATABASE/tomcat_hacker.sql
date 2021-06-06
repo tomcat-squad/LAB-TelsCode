@@ -48,9 +48,9 @@ INSERT INTO `admin` (`id`, `username`, `password`) VALUES
 
 CREATE TABLE `peserta` (
   `id` int(11) NOT NULL,
-  `nama` varchar(20) NOT NULL,
-  `kelas` varchar(3) NOT NULL,
-  `umur` int(30) NOT NULL
+  `nama` varchar(255) NOT NULL,
+  `kelas` varchar(255) NOT NULL,
+  `umur` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -61,8 +61,8 @@ CREATE TABLE `peserta` (
 
 CREATE TABLE `profile` (
   `id` int(11) NOT NULL,
-  `nama` varchar(20) NOT NULL,
-  `kelas` varchar(3) NOT NULL,
+  `nama` varchar(255) NOT NULL,
+  `kelas` varchar(255) NOT NULL,
   `screenshot` varchar(255) NOT NULL,
   `type` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
