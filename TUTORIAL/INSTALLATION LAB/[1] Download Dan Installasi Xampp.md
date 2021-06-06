@@ -20,5 +20,13 @@
 #### 7. Klik Next Jika Sudah Siap Untuk Proses Installasi
 ![6](https://user-images.githubusercontent.com/67460437/120561160-3fa13000-c42e-11eb-9a33-d09b76b473d9.PNG)
 
-#### 8. Terakhir Tunggu Proses Installasi Selesai
+#### 8. Tunggu Proses Installasi Selesai
 ![7](https://user-images.githubusercontent.com/67460437/120561162-4039c680-c42e-11eb-96d9-afb63446d141.PNG)
+
+#### 9. Jika Sudah Berhasil Terinstall Selanjutnya Ketik Di Windows Pencarian *XAMPP Control Panel* Dan Buka Applikasi Tersebut
+![1](https://user-images.githubusercontent.com/67460437/120905476-7e2c2a00-c67c-11eb-99de-bde656f6a937.PNG)
+
+#### 10. Terakhir Setelah Sudah Dibuka, Klik Start Pada Module Apache & MySQL.  
+Catatan : Untuk Berhentikan Service Tersebut Bisa Diklik Stop!
+![2](https://user-images.githubusercontent.com/67460437/120905557-188c6d80-c67d-11eb-85f4-f75875d7261c.PNG)
+![3](https://user-images.githubusercontent.com/67460437/120905559-19bd9a80-c67d-11eb-96e1-6c11294ff3c4.PNG)
