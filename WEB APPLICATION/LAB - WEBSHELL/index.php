@@ -13,11 +13,11 @@ include_once '../header.php';
                <div class="row">
                   <div class="col">
                     <label for="name">Nama</label>
-                    <input type="text" class="form-control" placeholder="John Lenon" name="nama" maxlength="15">
+                    <input type="text" class="form-control" placeholder="John Lenon" name="nama">
                   </div>
                   <div class="col">
                     <label for="kelas">Kelas</label>
-                    <input type="text" class="form-control" placeholder="X" name="kelas" maxlength="3">
+                    <input type="text" class="form-control" placeholder="X" name="kelas">
                   </div>
                   <div class="col">
                      <label for="gambar">Foto Profile</label>

@@ -23,15 +23,15 @@ include_once '../../header.php';
             <div class="row">
                <div class="col">
                   <label for="name">Nama</label>
-                  <input type="text" class="form-control" placeholder="John Lenon" name="nama" maxlength="15">
+                  <input type="text" class="form-control" placeholder="John Lenon" name="nama">
                </div>
                <div class="col">
                   <label for="kelas">Kelas</label>
-                  <input type="text" class="form-control" placeholder="X" name="kelas" maxlength="3">
+                  <input type="text" class="form-control" placeholder="X" name="kelas">
                </div>
                <div class="col">
                   <label for="umur">Umur</label>
-                  <input type="number" class="form-control" placeholder="12" name="umur" min="10">
+                  <input type="number" class="form-control" placeholder="12" name="umur">
                </div>
             </div>
             <button type="submit" class="btn btn-primary mt-3">Submit</button>
