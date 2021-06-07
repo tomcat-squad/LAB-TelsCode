@@ -9,15 +9,15 @@ include_once '../header.php';
          </div>
          <div class="" style="margin-top: 50px;">
          <?php 
-        if(isset($_GET['pesan'])){
+         if(isset($_GET['pesan'])){
             if($_GET['pesan'] == "gagal"){
-                echo "Username Atau Password Salah";
+               echo "Username Atau Password Salah";
             }else if($_GET['pesan'] == "logout"){
-                echo "Anda Berhasil Logout";
+               echo "Anda Berhasil Logout";
             }else if($_GET['pesan'] == "belum_login"){
-                echo "Anda Harus Login Terlebih Dahulu!";
+               echo "Anda Harus Login Terlebih Dahulu!";
             }
-        }
+         }
         ?>
             <form action="assets/proses_login.php" method="POST">
                <div class="row">
