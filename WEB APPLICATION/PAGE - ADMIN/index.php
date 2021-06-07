@@ -1,5 +1,5 @@
 <?php
-$page = "xss";
+$page = "admin";
 include_once '../header.php';
 ?>
    <body>

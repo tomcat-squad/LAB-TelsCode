@@ -1,7 +1,7 @@
 <?php
    // Memulai Session
    session_start();
-   $page = "xss";
+   $page = "admin";
    include_once '../../header.php';
    include_once '../../DATABASE/koneksi.php';
 ?>
