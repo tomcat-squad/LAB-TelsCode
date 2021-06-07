@@ -1,6 +1,6 @@
 <?php
 $page = "xss";
-include_once '../../../header.php';
+include_once '../header.php';
 ?>
    <body>
       <div class="container">
@@ -36,5 +36,5 @@ include_once '../../../header.php';
       </div>
    </body>
 <?php
-include_once '../../../footer.php';
+include_once '../footer.php';
 ?>

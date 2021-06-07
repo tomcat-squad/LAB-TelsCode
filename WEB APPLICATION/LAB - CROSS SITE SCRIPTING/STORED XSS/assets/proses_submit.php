@@ -1,6 +1,6 @@
 <?php
     // Menghubungkan dengan koneksi
-    include_once('../assets/config/koneksi.php');
+    include_once '../../../DATABASE/koneksi.php';
 
     // Menangkap data yang dikirimkan dari form
     // SEBELUM DIPATCH

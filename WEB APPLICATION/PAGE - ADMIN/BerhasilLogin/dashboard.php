@@ -2,8 +2,8 @@
    // Memulai Session
    session_start();
    $page = "xss";
-   include_once '../../../../header.php';
-   include_once('../../assets/config/koneksi.php')
+   include_once '../../header.php';
+   include_once '../../DATABASE/koneksi.php';
 ?>
    <body>
         <?php
@@ -47,5 +47,5 @@
       </div>
    </body>
 <?php
-include_once '../../../../footer.php';
+include_once '../..//footer.php';
 ?>

@@ -1,7 +1,7 @@
 <?php
    $page = "sqlInjection";
    include_once '../../header.php';
-   include_once 'assets/config/koneksi.php';
+   include_once '../../DATABASE/koneksi.php';
 ?>
    <body>
       <div class="container">
@@ -16,7 +16,7 @@
          ?>
          <div class="" style="margin-top: 50px;">
          <form action="index.php" method="get">
-               <label>Cari Data Member</label>
+               <label>Cari Data Member Dengan ID</label>
                <input class="form-control" type="text" name="cari">
                <input class="btn btn-dark" style="margin-top: 10px; margin-bottom: 10px;" type="submit" value="Cari">
             </form>

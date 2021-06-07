@@ -3,7 +3,7 @@
 session_start();
 
 // menghubungkan dengan koneksi
-include '../../assets/config/koneksi.php';
+include_once '../../DATABASE/koneksi.php';
 
 // menangkap data yang dikirim dari form
 $username = $_POST['username'];

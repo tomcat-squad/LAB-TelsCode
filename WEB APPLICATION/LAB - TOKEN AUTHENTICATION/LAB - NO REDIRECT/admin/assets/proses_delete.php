@@ -1,6 +1,6 @@
 <?php
     // menghubungkan dengan koneksi
-    include 'config/koneksi.php';
+    include_once '../../DATABASE/koneksi.php';
 
     // mengambil id yang akan dihapus
     $id = $_GET['id'];

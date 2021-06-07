@@ -1,7 +1,7 @@
 <?php
 $page = "xss";
 include_once '../../header.php';
-include_once 'assets/config/koneksi.php';
+include_once '../../DATABASE/koneksi.php';
 ?>
 <!-- BODY -->
 <body>

@@ -1,7 +1,4 @@
 <?php
-    //Aktifkan Session
-    session_start();
-
     //Menghapus Semua Session
     session_destroy();
 

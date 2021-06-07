@@ -1,6 +1,6 @@
 <?php
 // Load file koneksi.php
-include "config/koneksi.php";
+include_once '../../DATABASE/koneksi.php';
 
 // Ambil Data yang Dikirim dari Form
 $nama	= $_POST['nama'];

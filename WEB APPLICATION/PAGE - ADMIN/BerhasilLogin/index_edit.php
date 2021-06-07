@@ -2,8 +2,8 @@
    // Memulai Session
    session_start();
    $page = "xss";
-   include_once '../../../../header.php';
-   include_once('../../assets/config/koneksi.php');
+   include_once '../../header.php';
+   include_once '../../DATABASE/koneksi.php';
     
    $id = (int)$_GET['id'];
 
@@ -23,7 +23,7 @@
             <h1>DASHBOARD ADMIN</h1>
          </div>
          <div class="" style="margin-top: 50px;">
-         <a class="btn btn-danger" style="margin-bottom: 20px;" href="../assets/proses_logout.php">KELUAR</a>
+         <a class="btn btn-danger" style="margin-bottom: 20px;" href="javascript:history.back();">KEMBALI</a>
          <h3>Edit Data</h3>
          <form action="../assets/proses_edit.php?id=<?php echo $id; ?>" method="POST">
                <div class="row">
@@ -46,5 +46,5 @@
       </div>
    </body>
 <?php
-include_once '../../../../footer.php';
+include_once '../../footer.php';
 ?>

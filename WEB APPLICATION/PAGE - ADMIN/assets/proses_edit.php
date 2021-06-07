@@ -1,6 +1,6 @@
 <?php
     // menghubungkan dengan koneksi
-    include '../../assets/config/koneksi.php';
+    include_once '../../DATABASE/koneksi.php';
 
     $id = $_GET['id'];
     

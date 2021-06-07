@@ -259,7 +259,10 @@ a.docs:hover {
                     <a href="https://github.com/tomcat-squad/LAB-TelsCode/tree/master/Tutorial" target="_blank" class="docs">Lihat Tutorial Dasar</a>
                 </li>
                 <li>
-                    <a href="<?php echo ('http://'); echo $_SERVER['HTTP_HOST'];?>/phpmyadmin" target="_blank" class="bg-primary">PhpMyAdmin</a>
+                    <a href="<?php echo ('http://'); echo $_SERVER['HTTP_HOST'];?>/LAB-TelsCode/WEB APPLICATION/PAGE - ADMIN" target="_blank" class="bg-info">Dashboard Admin</a>
+                </li>
+                <li>
+                    <a href="<?php echo ('http://'); echo $_SERVER['HTTP_HOST'];?>/phpmyadmin" target="_blank" class="bg-info">PhpMyAdmin</a>
                 </li>
             </ul>
             <div>

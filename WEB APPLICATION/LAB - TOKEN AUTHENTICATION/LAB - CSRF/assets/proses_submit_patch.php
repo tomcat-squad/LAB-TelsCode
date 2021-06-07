@@ -1,7 +1,7 @@
 <?php
 session_start();
 // Menghubungkan dengan koneksi
-include_once('config/koneksi.php');
+include_once '../../../DATABASE/koneksi.php';
 
 // Memasukan script CSRF Protection
 include 'csrf.php';
